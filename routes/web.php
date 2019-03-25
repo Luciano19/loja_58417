@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('inicial');
 });
+Route::get('/categorias/restaurar', 'CategoriaController@IndexWithTrashed');
 /*Route::get('/categorias', "CategoriaController@index");
 Route::get('/categoria/editar/{id}', "CategoriaController@edit");
 Route::get('/categoria/cadastro', "CategoriaController@create");

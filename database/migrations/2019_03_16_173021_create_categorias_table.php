@@ -18,6 +18,11 @@ class CreateCategoriasTable extends Migration
             $table->string('nome');
             $table->timestamps();
         });
+
+        Schema::table('categorias', function (Blueprint $table) {
+            $table->softDeletes();
+        });
+        
     }
 
     /**
